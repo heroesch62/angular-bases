@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-counter',
 
   template:`
-  <h1> {{ title}} </h1>
+
   <h3>Counter: {{ counter }}</h3>
 <button (click)="decreaseBy(1)">-1</button>
 <button (click)="reset(0)">Reset</button>
@@ -15,7 +15,6 @@ import { Component, OnInit } from '@angular/core';
 export class CounterComponent implements OnInit {
   constructor() { }
 
-  public title: string = 'Hola x Mundo';
   public counter: number = 0;
 
   increaseBy(value: number):void
